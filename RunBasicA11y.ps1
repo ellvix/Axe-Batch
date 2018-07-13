@@ -2,13 +2,18 @@
 
 Clear-Host
 
+New-Item -Path ".\outputjson\" -Force -ItemType Directory
+New-Item -Path ".\source\" -Force -ItemType Directory
+
 $names = @()
 $urls = @()
 $fileNames = @()
 $scores = @()
+$jsonPath = ".\outputjson\"
+$csvPath = ".\source\listofsites.csv"
 
 # get data from csv
-$csv = Import-Csv listofsites.csv -delimiter ","
+$csv = Import-Csv $csvPath -delimiter ","
 ForEach ($row in $csv) {
     $names += $row.Name
     $urls += $row.URL
@@ -20,9 +25,9 @@ $num = $urls.Length
 # run the axe command on the url and save the file locally
 For ( $i = 0 ; $i -lt $num ; $i++ ) {
     $thisFileName = $names[$i] -replace "[\W_]+",""
-    $thisFileName += ".json"
+    $thisFileName = $jsonPath + $thisFileName + ".json"
     $fileNames += $thisFileName
-    axe $urls[$i] --load-delay=2000 --tags wcag2a --save $thisFileName 
+    axe $urls[$i] --load-delay=2000 --tags wcag2a --save $thisFileName
 }
 
 
@@ -50,8 +55,7 @@ ForEach ($row in $csv) {
     $i++
 }
 
-$out | Export-Csv -Force -NoTypeInformation "listofsites.csv"
+$out | Export-Csv -Force -NoTypeInformation $csvPath
 
 Write-Host "Exported csv for $num sites"
-
 
