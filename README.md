@@ -1,4 +1,5 @@
 # Axe-Batch
+
 ##Batch run Axe through Powershell
 
 This is a script that uses Axe-Cli to run an accessibility compatibility test on a number of URLs in a csv. The URLs are scored, and the scores are appended to the csv file. 
@@ -14,6 +15,9 @@ Install Axe-Cli (requries Node 6+)
 https://github.com/dequelabs/axe-cli
 
 Install Powershell (already installed for Windows 7+)
+If you haven't run powershell before, you'll need to set the execution policy to actually be able to run stuff. 
+Run Powershell as admin, and run: Set-ExecutionPolicy RemoteSigned
+http://powershelltutorial.net/Home/powershell-execution-policy
 
 Clone / download this project
 Create a csv file called "listofsites.csv" and put it in the /source folder.
