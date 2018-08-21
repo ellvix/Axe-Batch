@@ -8,9 +8,8 @@ Score is based on tests passed vs total tests (passed / (passed + violations), a
 
 Useful for getting a quick rating of a site. VERY useful if run regularly to track a sites accessibility compliance over time. Extra triggers can also be added to the script to, say, send an email if sites drop below a certain score.
 
-Setup: 
+Setup (Windows only): 
 
-(For windows)
 Install Axe-Cli (requries Node 6+)
 https://github.com/dequelabs/axe-cli
 

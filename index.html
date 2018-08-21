@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Critical Site Report</title>
+
+        <link rel="stylesheet" href="src/bootstrap/css/bootstrap.min.css" >
+        <link href="src/styles.css" rel="stylesheet"/>
+
+        <script src="src/bootstrap/js/jquery-3.3.1.min.js"></script>
+        <script src="src/bootstrap/js/popper.min.js"></script>
+        <script src="src/bootstrap/js/bootstrap.min.js"></script>
+        <script src="src/utility.js"></script>
+        <script src="src/main.js"></script>
+
+    </head>
+
+    <body>
+        <div id="header_wrapper">
+            <a href="#main" class="sr-only">Skip to main content</a>
+            <header class="wrapper clearfix" role="banner" aria-label="header" id="header">
+                <div class="container relative">
+                    <div id="psu_icon_wrapper">
+                        <div id="psu_text_overlay">
+                            <a href="http://psu.edu" title="The Pennsylvania State University" class="psu-link">Penn State</a>
+                        </div>
+                        <img alt="Penn State University" title="Penn State University" src="src/psu_logo.png">
+                    </div>
+                    <div id="title_wrapper" class="text-center">
+                        <h1 class="title">Critical Site Report</h1>
+                    </div>
+                </div>
+            </header>
+            <nav id="topnav" role="navigation" aria-label="primary navigation">
+                <ul id="topnavul" role="menubar">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="#">Link1</a></li>
+                    <li><a href="#">Link2</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main id="main">
+        <div class="container margin_top" id="full_list_wrapper">
+            <h2 id="full_list_heading">Full list</h2>
+            <table id="full_list" class="table table-stripped">
+                <thead>
+                    <tr>
+                        <th>URL<span class="sort_wrapper" tabindex="0" aria-label="Sort Descending"><i class="glyphicon glyphicon-chevron-up" aria-hidden="true"></i><i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i></th>
+                        <th>Score<span class="sort_wrapper" tabindex="0" aria-label="Sort Descending"><i class="glyphicon glyphicon-chevron-up" aria-hidden="true"></i><i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="container margin_top hidden" id="details_wrapper">
+            <div>
+                <h2 class="pull-left" id="details_heading">Details</h2>
+                <p><button class="btn btn-primary pull-right" id="back_to_main">Back to List</button></p>
+                <div class="clearfix"></div>
+            </div>
+            <div id="details" class="margin_top">
+            </div>
+        </div>
+        </main>
+        <div class="modal" tabindex="-1" role="dialog" id="message_modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+

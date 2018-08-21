@@ -2,20 +2,26 @@
 # This is the script to batch run the axe compatibility checker on a set or URLs in source/listofsites.csv
 # Created by Sean McCurry July 2018
 
-Clear-Host
+#Clear-Host
 
-New-Item -Path ".\outputjson\" -Force -ItemType Directory
-New-Item -Path ".\source\" -Force -ItemType Directory
+Start-Transcript -Path "C:\scripts\logs.txt" 
+
+#New-Item -Path ".\outputjson\" -Force -ItemType Directory
+#New-Item -Path ".\source\" -Force -ItemType Directory
 
 $names = @()
 $urls = @()
 $fileNames = @()
 $scores = @()
+
+
+Set-Location C:\Users\smm48\Documents\Projects\Axe-Batch
+
 $jsonPath = ".\outputjson\"
-$csvPath = ".\source\listofsites.csv"
+$csvFile = ".\source\listofsites.csv"
 
 # get data from csv
-$csv = Import-Csv $csvPath -delimiter ","
+$csv = Import-Csv $csvFile -delimiter ","
 ForEach ($row in $csv) {
     $names += $row.Name
     $urls += $row.URL
@@ -57,7 +63,7 @@ ForEach ($row in $csv) {
     $i++
 }
 
-$out | Export-Csv -Force -NoTypeInformation $csvPath
+$out | Export-Csv -Force -NoTypeInformation $csvFile
 
 Write-Host "Exported csv for $num sites"
 
