@@ -1,4 +1,3 @@
-
 # This is the script to batch run the axe compatibility checker on a set or URLs in source/listofsites.csv
 # Created by Sean McCurry July 2018
 

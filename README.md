@@ -1,6 +1,6 @@
 # Axe-Batch
 
-##Batch run Axe through Powershell
+## Batch run Axe through Powershell
 
 This is a script that uses Axe-Cli to run an accessibility compatibility test on a number of URLs in a csv. The URLs are scored, and the scores are appended to the csv file. 
 
@@ -24,3 +24,5 @@ listofsites.csv should have 2 columns at the start: Name and Url, capitalized ju
 
 That's it! Run the main ps1 file in powershell. Takes about 5 sec per URL, though that depends on the size of the site obviously. Results will be returned to the listofsites.csv file as new columns with a timestamp.
 
+## In progress
+Working on getting this running on a webserver (linux box, etc). First step is to do the actual batch job via python instead. Also working on a better output than a raw csv file; have a basic html display set up currently, will improve data visualization at some point. 
