@@ -1,0 +1,4553 @@
+[
+  {
+    "inapplicable": [
+      {
+        "description": "Ensures <area> elements of image maps have alternate text",
+        "help": "Active <area> elements must have alternate text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/area-alt?application=webdriverjs",
+        "id": "area-alt",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensures unsupported DPUB roles are only used on elements with implicit fallback roles",
+        "help": "Unsupported DPUB ARIA roles should be used on elements with implicit fallback roles",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/aria-dpub-role-fallback?application=webdriverjs",
+        "id": "aria-dpub-role-fallback",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag131"
+        ]
+      },
+      {
+        "description": "Ensures <audio> elements have captions",
+        "help": "<audio> elements must have a captions track",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/audio-caption?application=webdriverjs",
+        "id": "audio-caption",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.time-and-media",
+          "wcag2a",
+          "wcag121",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensures <blink> elements are not used",
+        "help": "<blink> elements are deprecated and must not be used",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/blink?application=webdriverjs",
+        "id": "blink",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.time-and-media",
+          "wcag2a",
+          "wcag222",
+          "section508",
+          "section508.22.j"
+        ]
+      },
+      {
+        "description": "Ensures <dl> elements are structured correctly",
+        "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script> or <template> elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/definition-list?application=webdriverjs",
+        "id": "definition-list",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131"
+        ]
+      },
+      {
+        "description": "Ensures <dt> and <dd> elements are contained by a <dl>",
+        "help": "<dt> and <dd> elements must be contained by a <dl>",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/dlitem?application=webdriverjs",
+        "id": "dlitem",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131"
+        ]
+      },
+      {
+        "description": "Ensures <iframe> and <frame> elements contain a non-empty title attribute",
+        "help": "Frames must have title attribute",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/frame-title?application=webdriverjs",
+        "id": "frame-title",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag241",
+          "wcag412",
+          "section508",
+          "section508.22.i"
+        ]
+      },
+      {
+        "description": "Ensures <input type=\"image\"> elements have alternate text",
+        "help": "Image buttons must have alternate text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/input-image-alt?application=webdriverjs",
+        "id": "input-image-alt",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensures presentational <table> elements do not use <th>, <caption> elements or the summary attribute",
+        "help": "Layout tables must not use data table elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/layout-table?application=webdriverjs",
+        "id": "layout-table",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.semantics",
+          "wcag2a",
+          "wcag131"
+        ]
+      },
+      {
+        "description": "Ensures <marquee> elements are not used",
+        "help": "<marquee> elements are deprecated and must not be used",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/marquee?application=webdriverjs",
+        "id": "marquee",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.parsing",
+          "wcag2a",
+          "wcag222"
+        ]
+      },
+      {
+        "description": "Ensures <meta http-equiv=\"refresh\"> is not used",
+        "help": "Timed refresh must not exist",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/meta-refresh?application=webdriverjs",
+        "id": "meta-refresh",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.time",
+          "wcag2a",
+          "wcag2aaa",
+          "wcag221",
+          "wcag224",
+          "wcag325"
+        ]
+      },
+      {
+        "description": "Ensures <object> elements have alternate text",
+        "help": "<object> elements must have alternate text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/object-alt?application=webdriverjs",
+        "id": "object-alt",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensures that server-side image maps are not used",
+        "help": "Server-side image maps must not be used",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/server-side-image-map?application=webdriverjs",
+        "id": "server-side-image-map",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag211",
+          "section508",
+          "section508.22.f"
+        ]
+      },
+      {
+        "description": "Ensure that each cell in a table using the headers refers to another cell in that table",
+        "help": "All cells in a table element that use the headers attribute must only refer to other cells of that same table",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/td-headers-attr?application=webdriverjs",
+        "id": "td-headers-attr",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.tables",
+          "wcag2a",
+          "wcag131",
+          "section508",
+          "section508.22.g"
+        ]
+      },
+      {
+        "description": "Ensure that each table header in a data table refers to data cells",
+        "help": "All th elements and elements with role=columnheader/rowheader must have data cells they describe",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/th-has-data-cells?application=webdriverjs",
+        "id": "th-has-data-cells",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.tables",
+          "wcag2a",
+          "wcag131",
+          "section508",
+          "section508.22.g"
+        ]
+      },
+      {
+        "description": "Ensures <video> elements have captions",
+        "help": "<video> elements must have captions",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/video-caption?application=webdriverjs",
+        "id": "video-caption",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag122",
+          "section508",
+          "section508.22.a"
+        ]
+      }
+    ],
+    "incomplete": [],
+    "passes": [
+      {
+        "description": "Ensures ARIA attributes are allowed for an element's role",
+        "help": "Elements must only use allowed ARIA attributes",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/aria-allowed-attr?application=webdriverjs",
+        "id": "aria-allowed-attr",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-allowed-attr",
+                "impact": "critical",
+                "message": "ARIA attributes are used correctly for the defined role",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input aria-label=\"Search\" type=\"submit\" id=\"edit-submit\" name=\"op\" value=\"\" class=\"form-submit\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "input[aria-label=\"Search\"]"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag411",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensures aria-hidden='true' is not present on the document body.",
+        "help": "aria-hidden='true' must not be present on the document body",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/aria-hidden-body?application=webdriverjs",
+        "id": "aria-hidden-body",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-hidden-body",
+                "impact": "critical",
+                "message": "No aria-hidden attribute is present on document body",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<body class=\"html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-6 node-type-page with-rfi section-how-online-learning-works\" style=\"\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "body"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensures elements with ARIA roles have all required ARIA attributes",
+        "help": "Required ARIA attributes must be provided",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/aria-required-attr?application=webdriverjs",
+        "id": "aria-required-attr",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-attr",
+                "impact": "critical",
+                "message": "All required ARIA attributes are present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<aside id=\"sidebar-first\" role=\"complementary\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#sidebar-first"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-attr",
+                "impact": "critical",
+                "message": "All required ARIA attributes are present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<nav role=\"navigation\" id=\"block-menu-block-prospects-left\" class=\"block-menu-block-prospects-left block block-menu-block psu-sidemenu\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-menu-block-prospects-left"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-attr",
+                "impact": "critical",
+                "message": "All required ARIA attributes are present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<nav id=\"mobile-menu-repeat\" role=\"navigation\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#mobile-menu-repeat"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag411",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensures elements with an ARIA role that require child roles contain them",
+        "help": "Certain ARIA roles must contain particular children",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/aria-required-children?application=webdriverjs",
+        "id": "aria-required-children",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-children",
+                "impact": "critical",
+                "message": "Required ARIA children are present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<aside id=\"sidebar-first\" role=\"complementary\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#sidebar-first"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-children",
+                "impact": "critical",
+                "message": "Required ARIA children are present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<nav role=\"navigation\" id=\"block-menu-block-prospects-left\" class=\"block-menu-block-prospects-left block block-menu-block psu-sidemenu\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-menu-block-prospects-left"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-children",
+                "impact": "critical",
+                "message": "Required ARIA children are present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<nav id=\"mobile-menu-repeat\" role=\"navigation\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#mobile-menu-repeat"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag131"
+        ]
+      },
+      {
+        "description": "Ensures elements with an ARIA role that require parent roles are contained by them",
+        "help": "Certain ARIA roles must be contained by particular parents",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/aria-required-parent?application=webdriverjs",
+        "id": "aria-required-parent",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-parent",
+                "impact": "critical",
+                "message": "Required ARIA parent role present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<aside id=\"sidebar-first\" role=\"complementary\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#sidebar-first"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-parent",
+                "impact": "critical",
+                "message": "Required ARIA parent role present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<nav role=\"navigation\" id=\"block-menu-block-prospects-left\" class=\"block-menu-block-prospects-left block block-menu-block psu-sidemenu\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-menu-block-prospects-left"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-required-parent",
+                "impact": "critical",
+                "message": "Required ARIA parent role present",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<nav id=\"mobile-menu-repeat\" role=\"navigation\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#mobile-menu-repeat"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag131"
+        ]
+      },
+      {
+        "description": "Ensures all elements with a role attribute use a valid value",
+        "help": "ARIA roles used must conform to valid values",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/aria-roles?application=webdriverjs",
+        "id": "aria-roles",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [],
+            "html": "<aside id=\"sidebar-first\" role=\"complementary\">",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "invalidrole",
+                "impact": "critical",
+                "message": "ARIA role is valid",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "abstractrole",
+                "impact": "serious",
+                "message": "Abstract roles are not used",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#sidebar-first"
+            ]
+          },
+          {
+            "all": [],
+            "any": [],
+            "html": "<nav role=\"navigation\" id=\"block-menu-block-prospects-left\" class=\"block-menu-block-prospects-left block block-menu-block psu-sidemenu\">",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "invalidrole",
+                "impact": "critical",
+                "message": "ARIA role is valid",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "abstractrole",
+                "impact": "serious",
+                "message": "Abstract roles are not used",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#block-menu-block-prospects-left"
+            ]
+          },
+          {
+            "all": [],
+            "any": [],
+            "html": "<nav id=\"mobile-menu-repeat\" role=\"navigation\">",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "invalidrole",
+                "impact": "critical",
+                "message": "ARIA role is valid",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "abstractrole",
+                "impact": "serious",
+                "message": "Abstract roles are not used",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#mobile-menu-repeat"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag131",
+          "wcag411",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensures all ARIA attributes have valid values",
+        "help": "ARIA attributes must conform to valid values",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/aria-valid-attr-value?application=webdriverjs",
+        "id": "aria-valid-attr-value",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [
+              {
+                "data": null,
+                "id": "aria-valid-attr-value",
+                "impact": "critical",
+                "message": "ARIA attribute values are valid",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "aria-errormessage",
+                "impact": "critical",
+                "message": "Uses a supported aria-errormessage technique",
+                "relatedNodes": []
+              }
+            ],
+            "any": [],
+            "html": "<input aria-label=\"Search\" type=\"submit\" id=\"edit-submit\" name=\"op\" value=\"\" class=\"form-submit\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "input[aria-label=\"Search\"]"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag131",
+          "wcag411",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensures attributes that begin with aria- are valid ARIA attributes",
+        "help": "ARIA attributes must conform to valid names",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/aria-valid-attr?application=webdriverjs",
+        "id": "aria-valid-attr",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-valid-attr",
+                "impact": "critical",
+                "message": "ARIA attribute name are valid",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input aria-label=\"Search\" type=\"submit\" id=\"edit-submit\" name=\"op\" value=\"\" class=\"form-submit\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "input[aria-label=\"Search\"]"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag411"
+        ]
+      },
+      {
+        "description": "Ensures buttons have discernible text",
+        "help": "Buttons must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/button-name?application=webdriverjs",
+        "id": "button-name",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-label",
+                "impact": "serious",
+                "message": "aria-label attribute exists and is not empty",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input aria-label=\"Search\" type=\"submit\" id=\"edit-submit\" name=\"op\" value=\"\" class=\"form-submit\">",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "input[aria-label=\"Search\"]"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+        "help": "Page must have means to bypass repeated blocks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/bypass?application=webdriverjs",
+        "id": "bypass",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "internal-link-present",
+                "impact": "serious",
+                "message": "Valid skip link found",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "header-present",
+                "impact": "serious",
+                "message": "Page has a header",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<html lang=\"en\" class=\"js deque-axe-is-ready\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "html"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag241",
+          "section508",
+          "section508.22.o"
+        ]
+      },
+      {
+        "description": "Ensures each HTML document contains a non-empty <title> element",
+        "help": "Documents must have <title> element to aid in navigation",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/document-title?application=webdriverjs",
+        "id": "document-title",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "doc-has-title",
+                "impact": "serious",
+                "message": "Document has a non-empty <title> element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<html lang=\"en\" class=\"js deque-axe-is-ready\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "html"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag242"
+        ]
+      },
+      {
+        "description": "Ensures every id attribute value is unique",
+        "help": "id attribute value must be unique",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/duplicate-id?application=webdriverjs",
+        "id": "duplicate-id",
+        "impact": "moderate",
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "www-widgetapi-script",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<script type=\"text/javascript\" id=\"www-widgetapi-script\" src=\"https://s.ytimg.com/yts/jsbin/www-widgetapi-vflY6gPjD/www-widgetapi.js\" async=\"\"></script>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#www-widgetapi-script"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "tb_tfa_script",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<script async=\"\" src=\"//cdn.taboola.com/libtrc/unip/1048821/tfa.js\" id=\"tb_tfa_script\"></script>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#tb_tfa_script"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "block-psu-prospects-blocks-prospects-mobilemenu",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<article id=\"block-psu-prospects-blocks-prospects-mobilemenu\" class=\"block-psu-prospects-blocks-prospects-mobilemenu block block-psu-prospects-blocks\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-psu-prospects-blocks-prospects-mobilemenu"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "header-wrapper",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"header-wrapper\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#header-wrapper"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "mobile-utility-wrapper",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"mobile-utility-wrapper\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#mobile-utility-wrapper"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "mobile-utility",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"mobile-utility\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#mobile-utility"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "block-menu-menu-header-prospects-links",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<article id=\"block-menu-menu-header-prospects-links\" class=\"block-menu-menu-header-prospects-links block block-menu\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-menu-menu-header-prospects-links"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "expand-search-button",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<button id=\"expand-search-button\">Search</button>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#expand-search-button"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "search-block",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"search-block\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#search-block"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "search",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"search\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#search"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "search-block-form",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<form onsubmit=\"validateSearch(event)\" action=\"/how-online-learning-works\" method=\"post\" id=\"search-block-form\" accept-charset=\"UTF-8\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#search-block-form"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "edit-search-block-form--2",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input title=\"Enter the terms you wish to search for.\" onblur=\"if (this.value == '') {this.value = 'Search';}\" onfocus=\"if (this.value == 'Search') {this.value = '';}\" placeholder=\"Search\" type=\"text\" id=\"edit-search-block-form--2\" name=\"search_block_form\" value=\"Search\" size=\"40\" maxlength=\"128\" class=\"form-text\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#edit-search-block-form--2"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "psu_logo",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"psu_logo\">\n        <a title=\"Home\" rel=\"home\" href=\"/\"></a>\n      </div>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#psu_logo"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "block-psu-prospects-blocks-prospects-megamenu",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<article id=\"block-psu-prospects-blocks-prospects-megamenu\" class=\"block-psu-prospects-blocks-prospects-megamenu block block-psu-prospects-blocks\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-psu-prospects-blocks-prospects-megamenu"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "mobile-main-menu-button",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"#\" id=\"mobile-main-menu-button\"><div class=\"wrap\">Menu</div>\n        <div class=\"icon-menu\">\n          <span class=\"bar1\"></span>\n          <span class=\"bar2\"></span>\n          <span class=\"bar3\"></span>\n        </div>\n      </a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#mobile-main-menu-button"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "content-header",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"content-header\" class=\"inner-padding\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#content-header"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "page-title",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<h1 class=\"title\" id=\"page-title\">How Online Learning Works</h1>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#page-title"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "desktop-breadcrumbs",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"desktop-breadcrumbs\"><nav class=\"breadcrumb\"><a href=\"/\">Home</a> » How Online Learning Works</nav></div>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#desktop-breadcrumbs"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "sidebar-first",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<aside id=\"sidebar-first\" role=\"complementary\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#sidebar-first"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "block-menu-block-prospects-left",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<nav role=\"navigation\" id=\"block-menu-block-prospects-left\" class=\"block-menu-block-prospects-left block block-menu-block psu-sidemenu\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-menu-block-prospects-left"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "block-psu-prospects-events-psu-prospects-events-dynamic",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<article id=\"block-psu-prospects-events-psu-prospects-events-dynamic\" class=\"block-psu-prospects-events-psu-prospects-events-dynamic block block-psu-prospects-events grey-rounded\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-psu-prospects-events-psu-prospects-events-dynamic"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "node-1659",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<article id=\"node-1659\" class=\"node node-be-exceptional node-block clearfix\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#node-1659"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "node-1780",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<article id=\"node-1780\" class=\"node node-be-exceptional node-block clearfix\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#node-1780"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "node-1585",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<article id=\"node-1585\" class=\"node node-be-exceptional node-block clearfix\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#node-1585"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "node-1847",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<article id=\"node-1847\" class=\"node node-be-exceptional node-block clearfix\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#node-1847"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "second-sidebar-tablet",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"second-sidebar-tablet\"></div>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#second-sidebar-tablet"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "content",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"content\" class=\"inner-padding\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#content"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "block-system-main",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<article id=\"block-system-main\" class=\"block-system-main block block-system\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-system-main"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "node-6",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<article id=\"node-6\" class=\"node node-page node-promoted node-full node-full clearfix\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#node-6"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "gGcPkDvdbEk",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"gGcPkDvdbEk\"></div>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#gGcPkDvdbEk"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "mobile-menu-repeat",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<nav id=\"mobile-menu-repeat\" role=\"navigation\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#mobile-menu-repeat"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "mobile-menu-repeat-links",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"mobile-menu-repeat-links\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#mobile-menu-repeat-links"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "mobile-breadcrumbs",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"mobile-breadcrumbs\">\n        <nav class=\"breadcrumb\"><a href=\"/\">Home</a> » How Online Learning Works</nav>      </div>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#mobile-breadcrumbs"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "footer",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"footer\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#footer"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "super-footer-wrapper",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"super-footer-wrapper\" class=\"clearfix\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#super-footer-wrapper"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "super-footer",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"super-footer\" class=\"inner-padding\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#super-footer"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "mobile-shield",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"mobile-shield\">\n                <a href=\"/\"></a>\n              </div>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#mobile-shield"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "block-psu-footer-footer-region-1",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<article id=\"block-psu-footer-footer-region-1\" class=\"block-psu-footer-footer-region-1 block block-psu-footer\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-psu-footer-footer-region-1"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "block-psu-footer-footer-region-2",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<article id=\"block-psu-footer-footer-region-2\" class=\"block-psu-footer-footer-region-2 block block-psu-footer\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-psu-footer-footer-region-2"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "block-psu-footer-footer-region-3",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<article id=\"block-psu-footer-footer-region-3\" class=\"block-psu-footer-footer-region-3 block block-psu-footer\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-psu-footer-footer-region-3"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "block-psu-footer-footer-region-4",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<article id=\"block-psu-footer-footer-region-4\" class=\"block-psu-footer-footer-region-4 block block-psu-footer\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-psu-footer-footer-region-4"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "mobile-footer-nav",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div class=\"big\" id=\"mobile-footer-nav\">\n    <ul>\n      <li><a href=\"/\">Home</a></li>\n      <li><a id=\"scroll-to-top\">Back to Top</a></li>\n    </ul>\n    <span class=\"clear\"></span>\n  </div>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#mobile-footer-nav"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "scroll-to-top",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a id=\"scroll-to-top\">Back to Top</a>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#scroll-to-top"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "legal-footer-wrapper",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"legal-footer-wrapper\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#legal-footer-wrapper"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "visible_float",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"visible_float\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#visible_float"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "talismachat-wrapper",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"talismachat-wrapper\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#talismachat-wrapper"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "talismachat-content",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"talismachat-content\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#talismachat-content"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "talismaheader-icon-chat",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"talismaheader-icon-chat\"><img alt=\" \" class=\"talismachat\" src=\"/sites/all/modules/custom/psu_talismachat/images/Chat-icon-1-small.png\"></div>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#talismaheader-icon-chat"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "talismaheader-text",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"talismaheader-text\"><span>Chat With An Admissions Counselor</span></div>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#talismaheader-text"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "talismaheader-icon-close",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"talismaheader-icon-close\"><img alt=\" \" class=\"talismachat-close\" src=\"/sites/all/modules/custom/psu_talismachat/images/close-icon.png\"></div>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#talismaheader-icon-close"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "chat-body",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"chat-body\" style=\"display: none;\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#chat-body"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "admissions-chat-request-form",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<form class=\"talismachat\" name=\"sample\" id=\"admissions-chat-request-form\" method=\"post\" target=\"chat\" onclick=\"return false;\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#admissions-chat-request-form"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "txtFirstName",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input class=\"talismachat\" type=\"text\" id=\"txtFirstName\" name=\"first_name\" value=\"\" placeholder=\"Enter First Name\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#txtFirstName"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "txtLastName",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input class=\"talismachat\" type=\"text\" id=\"txtLastName\" name=\"last_name\" value=\"\" placeholder=\"Enter Last Name\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#txtLastName"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "Email",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input class=\"talismachat\" type=\"text\" id=\"Email\" name=\"Email\" value=\"\" placeholder=\"abc@123.net\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#Email"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "btnChat",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input class=\"talismachat\" type=\"submit\" value=\"Start Chatting\" id=\"btnChat\" onclick=\"javascript:this.disabled = true;OpenChat();window.setTimeout(function(){document.getElementById(&quot;btnChat&quot;).disabled = false;}, 5000);\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#btnChat"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "Auto",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input type=\"hidden\" id=\"Auto\" name=\"Auto\" value=\"\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#Auto"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "CurUrl",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input type=\"hidden\" id=\"CurUrl\" name=\"CurUrl\" value=\"\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#CurUrl"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "VName",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input type=\"hidden\" id=\"VName\" name=\"VName\" value=\"\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#VName"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "boolIsMobile",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input type=\"hidden\" id=\"boolIsMobile\" name=\"Is_Mobile\" value=\"false\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#boolIsMobile"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "txtChatDefaultChatVisitorURL",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input type=\"hidden\" id=\"txtChatDefaultChatVisitorURL\" name=\"25827\" value=\"https://www.worldcampus.psu.edu/how-online-learning-works\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#txtChatDefaultChatVisitorURL"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "txtChatDefaultMarketingCode",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input type=\"hidden\" id=\"txtChatDefaultMarketingCode\" name=\"25829\" value=\"\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#txtChatDefaultMarketingCode"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "psuedo-footer",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div id=\"psuedo-footer\">\n        <hr>\n        <span>or </span><a style=\"cursor: pointer;\" tabindex=\"0\" onkeypress=\"ShowEmailUs(event)\" onclick=\"ShowEmailUs(event)\">Email Us</a>\n      </div>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#psuedo-footer"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "block-webform-client-block-1712",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<article id=\"block-webform-client-block-1712\" class=\"block-webform-client-block-1712 block block-webform\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-webform-client-block-1712"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "webform-client-form-1712",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<form class=\"webform-client-form\" enctype=\"multipart/form-data\" action=\"/content/email-us?url=how-online-learning-works\" method=\"post\" id=\"webform-client-form-1712\" accept-charset=\"UTF-8\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#webform-client-form-1712"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "webform-component-name",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div class=\"form-item webform-component webform-component-textfield webform-container-inline\" id=\"webform-component-name\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#webform-component-name"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "edit-submitted-name",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input type=\"text\" id=\"edit-submitted-name\" name=\"submitted[name]\" value=\"\" size=\"60\" maxlength=\"128\" class=\"form-text required\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#edit-submitted-name"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "webform-component-email",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div class=\"form-item webform-component webform-component-email webform-container-inline\" id=\"webform-component-email\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#webform-component-email"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "edit-submitted-email",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input class=\"email form-text form-email required\" type=\"email\" id=\"edit-submitted-email\" name=\"submitted[email]\" size=\"60\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#edit-submitted-email"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "webform-component-message",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div class=\"form-item webform-component webform-component-textarea\" id=\"webform-component-message\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#webform-component-message"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "edit-submitted-message",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<textarea id=\"edit-submitted-message\" name=\"submitted[message]\" cols=\"60\" rows=\"5\" class=\"form-textarea required\"></textarea>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#edit-submitted-message"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<script type=\"text/javascript\" id=\"\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "script[type=\"text\\/javascript\"]:nth-child(10)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "batBeacon0.22739279169718585",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div style=\"width:0px; height:0px; display:none; visibility:hidden;\" id=\"batBeacon0.22739279169718585\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#batBeacon0\\.22739279169718585"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "batBeacon0.5790250783905293",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<img style=\"width:0px; height:0px; display:none; visibility:hidden;\" id=\"batBeacon0.5790250783905293\" width=\"0\" height=\"0\" alt=\"\" src=\"https://bat.bing.com/action/0?ti=5438108&amp;Ver=2&amp;mid=106fc4af-5def-c9b6-0fc2-30aeed0d28ee&amp;pi=0&amp;lg=en-US&amp;sw=800&amp;sh=600&amp;sc=24&amp;tl=Penn%20State%20World%20Campus%20%7C%20How%20Online%20Learning%20Works&amp;kw=Penn%20State%20World%20Campus,%20online%20learning,%20online%20classes&amp;p=https%3A%2F%2Fwww.worldcampus.psu.edu%2Fhow-online-learning-works&amp;r=&amp;lt=562&amp;evt=pageLoad&amp;msclkid=N&amp;rn=601727\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#batBeacon0\\.5790250783905293"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "batBeacon0.057530593194866864",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<div style=\"width:0px; height:0px; display:none; visibility:hidden;\" id=\"batBeacon0.057530593194866864\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#batBeacon0\\.057530593194866864"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "batBeacon0.47090814747140697",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has no elements that share the same id attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<img style=\"width:0px; height:0px; display:none; visibility:hidden;\" id=\"batBeacon0.47090814747140697\" width=\"0\" height=\"0\" alt=\"\" src=\"https://bat.bing.com/action/0?ti=4056010&amp;Ver=2&amp;mid=c6f7ddb1-c10b-c75a-9f92-e734b6f79d2b&amp;pi=0&amp;lg=en-US&amp;sw=800&amp;sh=600&amp;sc=24&amp;tl=Penn%20State%20World%20Campus%20%7C%20How%20Online%20Learning%20Works&amp;kw=Penn%20State%20World%20Campus,%20online%20learning,%20online%20classes&amp;p=https%3A%2F%2Fwww.worldcampus.psu.edu%2Fhow-online-learning-works&amp;r=&amp;lt=562&amp;evt=pageLoad&amp;msclkid=N&amp;rn=842262\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#batBeacon0\\.47090814747140697"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.parsing",
+          "wcag2a",
+          "wcag411"
+        ]
+      },
+      {
+        "description": "Ensures every HTML document has a lang attribute",
+        "help": "<html> element must have a lang attribute",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/html-has-lang?application=webdriverjs",
+        "id": "html-has-lang",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-lang",
+                "impact": "serious",
+                "message": "The <html> element has a lang attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<html lang=\"en\" class=\"js deque-axe-is-ready\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "html"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ]
+      },
+      {
+        "description": "Ensures the lang attribute of the <html> element has a valid value",
+        "help": "<html> element must have a valid value for the lang attribute",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/html-lang-valid?application=webdriverjs",
+        "id": "html-lang-valid",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [],
+            "html": "<html lang=\"en\" class=\"js deque-axe-is-ready\">",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "valid-lang",
+                "impact": "serious",
+                "message": "Value of lang attribute is included in the list of valid languages",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "html"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ]
+      },
+      {
+        "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+        "help": "Images must have alternate text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/image-alt?application=webdriverjs",
+        "id": "image-alt",
+        "impact": "critical",
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-alt",
+                "impact": "critical",
+                "message": "Element has an alt attribute",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "non-empty-title",
+                "impact": "serious",
+                "message": "Element has a title attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<img src=\"https://www.worldcampus.psu.edu/sites/default/files/styles/psu_700w/public/be_exceptional/Mark-Kennedy-Small.jpg?itok=4qQfg-4b\" width=\"265\" height=\"204\" alt=\"Mark Kennedy\" title=\"Mark Kennedy\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "img[width=\"\\32 65\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-alt",
+                "impact": "critical",
+                "message": "Element has an alt attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<img src=\"//img.youtube.com/vi/gGcPkDvdbEk/hqdefault.jpg\" alt=\"gGcPkDvdbEk\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "img[alt=\"gGcPkDvdbEk\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-alt",
+                "impact": "critical",
+                "message": "Element has an alt attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<img alt=\" \" class=\"talismachat\" src=\"/sites/all/modules/custom/psu_talismachat/images/Chat-icon-1-small.png\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".talismachat[alt=\"\\ \"]"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensures every form element has a label",
+        "help": "Form elements must have labels",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/label?application=webdriverjs",
+        "id": "label",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "explicit-label",
+                "impact": "critical",
+                "message": "Form element has an explicit <label>",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "non-empty-title",
+                "impact": "serious",
+                "message": "Element has a title attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input title=\"Enter the terms you wish to search for.\" onblur=\"if (this.value == '') {this.value = 'Search';}\" onfocus=\"if (this.value == 'Search') {this.value = '';}\" placeholder=\"Search\" type=\"text\" id=\"edit-search-block-form--2\" name=\"search_block_form\" value=\"Search\" size=\"40\" maxlength=\"128\" class=\"form-text\">",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "multiple-label",
+                "impact": "serious",
+                "message": "Form element does not have multiple <label> elements",
+                "relatedNodes": [
+                  {
+                    "html": "<label class=\"element-invisible\" for=\"edit-search-block-form--2\">Search </label>",
+                    "target": [
+                      "label[for=\"edit-search-block-form--2\"]"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "target": [
+              "#edit-search-block-form--2"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag332",
+          "wcag131",
+          "section508",
+          "section508.22.n"
+        ]
+      },
+      {
+        "description": "Ensures links have discernible text",
+        "help": "Links must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/link-name?application=webdriverjs",
+        "id": "link-name",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"#content\" class=\"element-invisible element-focusable\">Skip to main content</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".element-focusable"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/calendar\">Calendar</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".menu-calendar > a[href$=\"calendar\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/contacts-help\" title=\"Contacts &amp; Help\">Contacts &amp; Help</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "a[title=\"Contacts\\ \\&\\ Help\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"https://student.worldcampus.psu.edu/\">Current Students</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".menu-currentstudents > a"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a title=\"Home\" rel=\"home\" href=\"/\"></a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "a[title=\"Home\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"#\" id=\"mobile-main-menu-button\"><div class=\"wrap\">Menu</div>\n        <div class=\"icon-menu\">\n          <span class=\"bar1\"></span>\n          <span class=\"bar2\"></span>\n          <span class=\"bar3\"></span>\n        </div>\n      </a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#mobile-main-menu-button"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/\">Home</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#desktop-breadcrumbs > .breadcrumb > a[href=\"/\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/request-information\" class=\"request-info\" title=\"Request Info\">Request Info</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".desktop-cta > .info-buttons.info-for.apply-now > .request-info[href$=\"request-information\"][title=\"Request\\ Info\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/general-apply-now\" class=\"apply-now\" title=\"Apply Now\">Apply Now</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".desktop-cta > .info-buttons.info-for.apply-now > .apply-now[href$=\"general-apply-now\"][title=\"Apply\\ Now\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/how-online-learning-works\" title=\"How Online Learning Works\" class=\"active-trail active\">How Online Learning Works</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#block-menu-block-prospects-left > .menu-wrapper > header > .active-trail.active[title=\"How\\ Online\\ Learning\\ Works\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/how-online-learning-works/student-services\" title=\"Student Services\">Student Services</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#block-menu-block-prospects-left > .menu-wrapper > .menu-block-wrapper.menu-block-prospects_left.menu-name-menu-prospects > .menu > .menu-mlid-144.menu-studentservices.first > a[title=\"Student\\ Services\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/how-online-learning-works/how-it-works-faqs\" title=\"How It Works (FAQs)\">How It Works (FAQs)</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#block-menu-block-prospects-left > .menu-wrapper > .menu-block-wrapper.menu-block-prospects_left.menu-name-menu-prospects > .menu > .menu-mlid-145.menu-howitworksfaqs.last > a[title=\"How\\ It\\ Works\\ \\(FAQs\\)\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/content/military-open-house\">Military Virtual Open House</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "a[href$=\"military-open-house\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/content/keystone-college-career-fair\">Keystone College Career Fair</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".block-link:nth-child(4) > a"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/content/undergradate-admissions-and-career-services-webinar-0\">Undergradate Admissions and Career Services Webinar</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".block-link:nth-child(6) > a"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/calendar\" class=\"read-more\">View all Events</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".read-more[href$=\"calendar\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/degrees-and-certificates/business-bachelors/stories/1659\" class=\"read-more\">Read More</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#node-1659 > .content > .field-name-field-be-quote.field-type-text-long.field > .field-items > .even.field-item > .read-more"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"https://www.youtube.com/watch?v=gGcPkDvdbEk\" video-id=\"gGcPkDvdbEk\" video-width=\"640\" video-height=\"390\" video-src=\"//www.youtube.com/embed/gGcPkDvdbEk?wmode=opaque&amp;modestbranding=1&amp;rel=0\" video-title=\"gGcPkDvdbEk\">",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "a[video-id=\"gGcPkDvdbEk\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"https://www.worldcampus.psu.edu/degrees-and-certificates/penn-state-online-mba-degree-program/overview\" title=\"Learn more about the MBA Residency Experience\">MBA (Master of Business Administration)</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "p:nth-child(13) > a:nth-child(1)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"https://www.worldcampus.psu.edu/degrees-and-certificates/finance-masters/residency-experiences\" title=\"Learn more about the Master of Finance Residency Experience\">Master of Finance</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "p:nth-child(13) > a:nth-child(2)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"https://www.worldcampus.psu.edu/degrees-and-certificates/health-policy-and-administration-masters/residency-experiences\" title=\"Learn more about the Master of Health Administration Residency Experience\">Master of Health Administration</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "p:nth-child(13) > a:nth-child(3)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"https://www.worldcampus.psu.edu/degrees-and-certificates/supply-chain-management-masters/residency-experiences\" title=\"Learn more about the Master's in Supply Chain Management Residency Experience\">Master's in Supply Chain Management</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "p:nth-child(13) > a:nth-child(4)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/contacts-help\">Contact Us</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "h3 > a[href$=\"contacts-help\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"mailto:pennstateonline@psu.edu\">pennstateonline@psu.edu</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "a[href=\"mailto:pennstateonline@psu.edu\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"https://blog.worldcampus.psu.edu/\" class=\"social-icon-blog\" title=\"Blog\"></a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".social-icon-blog"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"https://www.facebook.com/psuworldcampus\" class=\"social-icon-facebook\" title=\"Facebook\"></a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".social-icon-facebook"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"https://twitter.com/PSUWorldcampus\" class=\"social-icon-twitter\" title=\"Twitter\"></a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".social-icon-twitter"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"https://www.linkedin.com/company/penn-state-world-campus\" class=\"social-icon-linkedin\" title=\"LinkedIn\"></a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".social-icon-linkedin"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"https://www.instagram.com/pennstateworldcampus/\" class=\"social-icon-instagram\" title=\"Instagram\"></a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".social-icon-instagram"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"https://plus.google.com/+PennStateOnline\" class=\"social-icon-googleplus\" title=\"Google+\"></a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".social-icon-googleplus"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"https://www.youtube.com/user/PSUWorldCampus\" class=\"social-icon-youtube\" title=\"Youtube\"></a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".social-icon-youtube"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"https://www.pinterest.com/PSUWorldCampus/\" class=\"social-icon-pinterest\" title=\"Pinterest\"></a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".social-icon-pinterest"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"https://www.flickr.com/photos/psuworldcampus/albums\" class=\"social-icon-flickr\" title=\"Flickr\"></a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".social-icon-flickr"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/degrees-and-certificates\">Degrees and Certificates</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "h3 > a[href$=\"degrees-and-certificates\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/degrees-and-certificates/directory/undergraduate/associate\">Associate Degrees</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#block-psu-footer-footer-region-2 > .welcome-content > ul > li:nth-child(1) > a"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/degrees-and-certificates/directory/undergraduate/bachelor\">Bachelor's Degrees</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#block-psu-footer-footer-region-2 > .welcome-content > ul > li:nth-child(2) > a"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/degrees-and-certificates/directory/undergraduate/certificates\">Undergraduate Certificates</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#block-psu-footer-footer-region-2 > .welcome-content > ul > li:nth-child(3) > a"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/degrees-and-certificates/directory/graduate/master\">Master's Degrees</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#block-psu-footer-footer-region-2 > .welcome-content > ul > li:nth-child(4) > a"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/degrees-and-certificates/directory/graduate/doctoral\">Doctoral Degrees</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".welcome-content > ul > li:nth-child(5) > a"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/degrees-and-certificates/directory/graduate/certificates\">Graduate Certificates</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".welcome-content > ul > li:nth-child(6) > a"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/degrees-and-certificates#topics\">Programs by Topic</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".welcome-content > ul > li:nth-child(7) > a"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"http://student.worldcampus.psu.edu/\">Current Students</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#block-psu-footer-footer-region-4 > .welcome-content > ul > li:nth-child(1) > a"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/alumni\">Alumni and Friends</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "a[href$=\"alumni\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/corporate-partners\">Education Alliance</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "a[href$=\"corporate-partners\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/faculty-and-staff-resources\">Faculty and Staff</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "a[href=\"/faculty-and-staff-resources\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/calendar\">Calendar</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "h3:nth-child(4) > a[href$=\"calendar\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/\">Home</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#mobile-footer-nav > ul > li:nth-child(1) > a[href=\"/\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"http://www.psu.edu\">The Pennsylvania State University</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "a[href$=\"www.psu.edu\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"http://www.psu.edu/copyright-information\">Copyright 2018</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#legal-footer-wrapper > a:nth-child(4)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/privacy-policy\">Privacy</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "a[href$=\"privacy-policy\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/website-feedback\">Website Feedback</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "a[href$=\"website-feedback\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"http://www.outreach.psu.edu/accessibility\">Accessibility</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "a:nth-child(9)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/students-with-disabilities\">Students with Disabilities</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "a[href=\"/students-with-disabilities\"]"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-visible-text",
+                "impact": "minor",
+                "message": "Element has text that is visible to screen readers",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<a href=\"/state-authorization\">State Authorization</a>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "a[href$=\"state-authorization\"]"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "wcag244",
+          "section508",
+          "section508.22.a"
+        ]
+      },
+      {
+        "description": "Ensures that lists are structured correctly",
+        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/list?application=webdriverjs",
+        "id": "list",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [],
+            "html": "<ul class=\"menu\">",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "only-listitems",
+                "impact": "serious",
+                "message": "List element only has direct children that are allowed inside <li> elements",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#block-menu-menu-header-prospects-links > .menu"
+            ]
+          },
+          {
+            "all": [],
+            "any": [],
+            "html": "<ul class=\"menu\">",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "only-listitems",
+                "impact": "serious",
+                "message": "List element only has direct children that are allowed inside <li> elements",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#block-menu-block-prospects-left > .menu-wrapper > .menu-block-wrapper.menu-block-prospects_left.menu-name-menu-prospects > .menu"
+            ]
+          },
+          {
+            "all": [],
+            "any": [],
+            "html": "<ul>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "only-listitems",
+                "impact": "serious",
+                "message": "List element only has direct children that are allowed inside <li> elements",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#block-psu-footer-footer-region-1 > .welcome-content > ul"
+            ]
+          },
+          {
+            "all": [],
+            "any": [],
+            "html": "<ul class=\"social-icon\">",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "only-listitems",
+                "impact": "serious",
+                "message": "List element only has direct children that are allowed inside <li> elements",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              ".social-icon"
+            ]
+          },
+          {
+            "all": [],
+            "any": [],
+            "html": "<ul>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "only-listitems",
+                "impact": "serious",
+                "message": "List element only has direct children that are allowed inside <li> elements",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#block-psu-footer-footer-region-2 > .welcome-content > ul"
+            ]
+          },
+          {
+            "all": [],
+            "any": [],
+            "html": "<ul>\n\t<li><a href=\"http://student.worldcampus.psu.edu/\">Current Students</a></li>\n\t<li><a href=\"/alumni\">Alumni and Friends</a></li>\n\t<li><a href=\"/corporate-partners\">Education Alliance</a></li>\n\t<li><a href=\"/faculty-and-staff-resources\">Faculty and Staff</a></li>\n</ul>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "only-listitems",
+                "impact": "serious",
+                "message": "List element only has direct children that are allowed inside <li> elements",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#block-psu-footer-footer-region-4 > .welcome-content > ul"
+            ]
+          },
+          {
+            "all": [],
+            "any": [],
+            "html": "<ul>\n      <li><a href=\"/\">Home</a></li>\n      <li><a id=\"scroll-to-top\">Back to Top</a></li>\n    </ul>",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "only-listitems",
+                "impact": "serious",
+                "message": "List element only has direct children that are allowed inside <li> elements",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "#mobile-footer-nav > ul"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131"
+        ]
+      },
+      {
+        "description": "Ensures <li> elements are used semantically",
+        "help": "<li> elements must be contained in a <ul> or <ol>",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/listitem?application=webdriverjs",
+        "id": "listitem",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li class=\"first leaf menu-calendar\"><a href=\"/calendar\">Calendar</a></li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".menu-calendar"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li class=\"leaf menu-contactshelp\"><a href=\"/contacts-help\" title=\"Contacts &amp; Help\">Contacts &amp; Help</a></li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".menu-contactshelp"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li class=\"last leaf menu-currentstudents\"><a href=\"https://student.worldcampus.psu.edu/\">Current Students</a></li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".menu-currentstudents"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li class=\"first leaf menu-mlid-144 menu-studentservices\"><a href=\"/how-online-learning-works/student-services\" title=\"Student Services\">Student Services</a></li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-menu-block-prospects-left > .menu-wrapper > .menu-block-wrapper.menu-block-prospects_left.menu-name-menu-prospects > .menu > .menu-mlid-144.menu-studentservices.first"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li class=\"last leaf menu-mlid-145 menu-howitworksfaqs\"><a href=\"/how-online-learning-works/how-it-works-faqs\" title=\"How It Works (FAQs)\">How It Works (FAQs)</a></li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-menu-block-prospects-left > .menu-wrapper > .menu-block-wrapper.menu-block-prospects_left.menu-name-menu-prospects > .menu > .menu-mlid-145.menu-howitworksfaqs.last"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li>U.S. Toll Free: 800-252-3592</li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-psu-footer-footer-region-1 > .welcome-content > ul > li:nth-child(1)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li>Local/International: 814-865-5403</li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-psu-footer-footer-region-1 > .welcome-content > ul > li:nth-child(2)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li>Fax: 814-865-3290</li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-psu-footer-footer-region-1 > .welcome-content > ul > li:nth-child(3)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li><a href=\"mailto:pennstateonline@psu.edu\">pennstateonline@psu.edu</a></li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-psu-footer-footer-region-1 > .welcome-content > ul > li:nth-child(4)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li><br>\n\t\tThe Pennsylvania State University<br>\n\t\t128 Outreach Building<br>\n\t\tUniversity Park, PA 16802</li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-psu-footer-footer-region-1 > .welcome-content > ul > li:nth-child(5)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li>\n\t\t<a href=\"https://blog.worldcampus.psu.edu/\" class=\"social-icon-blog\" title=\"Blog\"></a>\n\t\t<a href=\"https://www.facebook.com/psuworldcampus\" class=\"social-icon-facebook\" title=\"Facebook\"></a>\n\t\t<a href=\"https://twitter.com/PSUWorldcampus\" class=\"social-icon-twitter\" title=\"Twitter\"></a>\n\t</li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".social-icon > li:nth-child(1)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".social-icon > li:nth-child(2)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".social-icon > li:nth-child(3)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li><a href=\"/degrees-and-certificates/directory/undergraduate/associate\">Associate Degrees</a></li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-psu-footer-footer-region-2 > .welcome-content > ul > li:nth-child(1)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li><a href=\"/degrees-and-certificates/directory/undergraduate/bachelor\">Bachelor's Degrees</a></li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-psu-footer-footer-region-2 > .welcome-content > ul > li:nth-child(2)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li><a href=\"/degrees-and-certificates/directory/undergraduate/certificates\">Undergraduate Certificates</a></li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-psu-footer-footer-region-2 > .welcome-content > ul > li:nth-child(3)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li><a href=\"/degrees-and-certificates/directory/graduate/master\">Master's Degrees</a></li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-psu-footer-footer-region-2 > .welcome-content > ul > li:nth-child(4)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li><a href=\"/degrees-and-certificates/directory/graduate/doctoral\">Doctoral Degrees</a></li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-psu-footer-footer-region-2 > .welcome-content > ul > li:nth-child(5)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li><a href=\"/degrees-and-certificates/directory/graduate/certificates\">Graduate Certificates</a></li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".welcome-content > ul > li:nth-child(6)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li><a href=\"/degrees-and-certificates#topics\">Programs by Topic</a></li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              ".welcome-content > ul > li:nth-child(7)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li><a href=\"http://student.worldcampus.psu.edu/\">Current Students</a></li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-psu-footer-footer-region-4 > .welcome-content > ul > li:nth-child(1)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li><a href=\"/alumni\">Alumni and Friends</a></li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-psu-footer-footer-region-4 > .welcome-content > ul > li:nth-child(2)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li><a href=\"/corporate-partners\">Education Alliance</a></li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-psu-footer-footer-region-4 > .welcome-content > ul > li:nth-child(3)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li><a href=\"/faculty-and-staff-resources\">Faculty and Staff</a></li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#block-psu-footer-footer-region-4 > .welcome-content > ul > li:nth-child(4)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li><a href=\"/\">Home</a></li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#mobile-footer-nav > ul > li:nth-child(1)"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "listitem",
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<li><a id=\"scroll-to-top\">Back to Top</a></li>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "#mobile-footer-nav > ul > li:nth-child(2)"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131"
+        ]
+      }
+    ],
+    "timestamp": "2018-10-25T16:45:44.427Z",
+    "url": "https://www.worldcampus.psu.edu/how-online-learning-works",
+    "violations": [
+      {
+        "description": "Ensures every id attribute value is unique",
+        "help": "id attribute value must be unique",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/duplicate-id?application=webdriverjs",
+        "id": "duplicate-id",
+        "impact": "moderate",
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "edit-actions",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has multiple elements with the same id attribute: edit-actions",
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"form-actions form-wrapper\" id=\"edit-actions\"><input type=\"submit\" id=\"edit-submit\" name=\"op\" value=\"Submit\" class=\"form-submit\"></div>",
+                    "target": [
+                      "#webform-client-form-1712 > div > .form-actions.form-wrapper"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "failureSummary": "Fix any of the following:\n  Document has multiple elements with the same id attribute: edit-actions",
+            "html": "<div class=\"form-actions form-wrapper\" id=\"edit-actions\"><input aria-label=\"Search\" type=\"submit\" id=\"edit-submit\" name=\"op\" value=\"\" class=\"form-submit\"></div>",
+            "impact": "moderate",
+            "none": [],
+            "target": [
+              ".container-inline > .form-actions.form-wrapper"
+            ]
+          },
+          {
+            "all": [],
+            "any": [
+              {
+                "data": "edit-submit",
+                "id": "duplicate-id",
+                "impact": "moderate",
+                "message": "Document has multiple elements with the same id attribute: edit-submit",
+                "relatedNodes": [
+                  {
+                    "html": "<input type=\"submit\" id=\"edit-submit\" name=\"op\" value=\"Submit\" class=\"form-submit\">",
+                    "target": [
+                      "input[value=\"Submit\"]"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "failureSummary": "Fix any of the following:\n  Document has multiple elements with the same id attribute: edit-submit",
+            "html": "<input aria-label=\"Search\" type=\"submit\" id=\"edit-submit\" name=\"op\" value=\"\" class=\"form-submit\">",
+            "impact": "moderate",
+            "none": [],
+            "target": [
+              "input[aria-label=\"Search\"]"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.parsing",
+          "wcag2a",
+          "wcag411"
+        ]
+      },
+      {
+        "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+        "help": "Images must have alternate text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.0/image-alt?application=webdriverjs",
+        "id": "image-alt",
+        "impact": "critical",
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-alt",
+                "impact": "critical",
+                "message": "Element does not have an alt attribute",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "aria-label",
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "aria-labelledby",
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "non-empty-title",
+                "impact": "serious",
+                "message": "Element has no title attribute or the title attribute is empty",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "role-presentation",
+                "impact": "minor",
+                "message": "Element's default semantics were not overridden with role=\"presentation\"",
+                "relatedNodes": []
+              },
+              {
+                "data": null,
+                "id": "role-none",
+                "impact": "minor",
+                "message": "Element's default semantics were not overridden with role=\"none\"",
+                "relatedNodes": []
+              }
+            ],
+            "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+            "html": "<img src=\"https://www.worldcampus.psu.edu/sites/default/files/styles/psu_700w/public/main_image/BS-Psych-Goss.jpg?itok=_r8JjAHM\" width=\"700\" height=\"216\">",
+            "impact": "critical",
+            "none": [],
+            "target": [
+              "img[height=\"\\32 16\"]"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a"
+        ]
+      }
+    ]
+  }
+]
