@@ -1,6 +1,6 @@
-# Axe-Batch
+# aXe-Batch
 
-## Batch run Axe through Powershell
+## Batch run Axe 
 
 This is a script that uses Axe-Cli to run an accessibility compatibility test on a number of URLs in a csv. The URLs are scored, and the scores are appended to the csv file. 
 
@@ -8,12 +8,12 @@ Score is based on tests passed vs total tests (passed / (passed + violations), a
 
 Useful for getting a quick rating of a site. VERY useful if run regularly to track a sites accessibility compliance over time. Extra triggers can also be added to the script to, say, send an email if sites drop below a certain score.
 
-Setup (Windows only): 
+## Setup
 
 Install Axe-Cli (requries Node 6+)
 https://github.com/dequelabs/axe-cli
 
-Clone / download this project
+Clone / download aXe Batch
 Set up directories: There should be a blank 'source' folder and 'outputjson' folder. The scripts should generate these on first time run, but to avoid permission issues it's recommended to just create them manually. 
 Create a csv file called "listofsites.csv" and put it in the /source folder.
 Modify main csv file: listofsites.csv should have 2 columns at the start: Name and Url, capitalized just like that. Put your sites as rows, with a name and url.
