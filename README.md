@@ -11,18 +11,24 @@ Useful for getting a quick rating of a site. VERY useful if run regularly to tra
 ## Setup
 
 Install Axe-Cli (requries Node 6+)
+
 https://github.com/dequelabs/axe-cli
 
 Clone / download aXe Batch
+
 Set up directories: There should be a blank 'source' folder and 'outputjson' folder. The scripts should generate these on first time run, but to avoid permission issues it's recommended to just create them manually. 
+
 Create a csv file called "listofsites.csv" and put it in the /source folder.
 Modify main csv file: listofsites.csv should have 2 columns at the start: Name and Url, capitalized just like that. Put your sites as rows, with a name and url.
 
 ## Powershell build
 
 Install Powershell (already installed for Windows 7+)
+
 If you haven't run powershell before, you'll need to set the execution policy to actually be able to run stuff. 
+
 Run Powershell as admin, and run: Set-ExecutionPolicy RemoteSigned
+
 http://powershelltutorial.net/Home/powershell-execution-policy
 
 
