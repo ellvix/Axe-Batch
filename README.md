@@ -13,16 +13,23 @@ Setup (Windows only):
 Install Axe-Cli (requries Node 6+)
 https://github.com/dequelabs/axe-cli
 
+Clone / download this project
+Set up directories: There should be a blank 'source' folder and 'outputjson' folder. The scripts should generate these on first time run, but to avoid permission issues it's recommended to just create them manually. 
+Create a csv file called "listofsites.csv" and put it in the /source folder.
+Modify main csv file: listofsites.csv should have 2 columns at the start: Name and Url, capitalized just like that. Put your sites as rows, with a name and url.
+
+## Powershell build
+
 Install Powershell (already installed for Windows 7+)
 If you haven't run powershell before, you'll need to set the execution policy to actually be able to run stuff. 
 Run Powershell as admin, and run: Set-ExecutionPolicy RemoteSigned
 http://powershelltutorial.net/Home/powershell-execution-policy
 
-Clone / download this project
-Create a csv file called "listofsites.csv" and put it in the /source folder.
-listofsites.csv should have 2 columns at the start: Name and Url, capitalized just like that. Put your sites as rows, with a name and url. 
 
-That's it! Run the main ps1 file in powershell. Takes about 5 sec per URL, though that depends on the size of the site obviously. Results will be returned to the listofsites.csv file as new columns with a timestamp.
+## Python build
+Install Python. This has been tested with python 3.3, but various 3.x versions may be fine. 
 
-## In progress
-Working on getting this running on a webserver (linux box, etc). First step is to do the actual batch job via python instead. Also working on a better output than a raw csv file; have a basic html display set up currently, will improve data visualization at some point. 
+## Run it!
+
+That's it! Run the main python or powershell file! Takes about 5 sec per URL, though that depends on the size of the site obviously. Compliance will be checked by aXe for each site in the csv, given as a percentage score as a new column with a timestamp.
+

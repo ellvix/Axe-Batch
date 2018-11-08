@@ -3,6 +3,8 @@
 
 Clear-Host
 
+Start-Transcript -Path "C:\scripts\logs.txt"
+
 # Note: must have python set up in PATH
-python .\RunBasicA11y.py
+python "C:\Users\smm48\Documents\Projects\Axe-Batch\aXe_batch.py"
 
