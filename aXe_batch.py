@@ -17,6 +17,7 @@ print("Starting script")
 filePaths = []
 scoreData = {}
 fileData = []
+runAxe = True
 
 slashyslash = "/" # not sure if this makes a difference, but let's separate it out in case we need to swap when we move to linux
 jsonFolder = "outputjson" + slashyslash
@@ -28,30 +29,32 @@ dname = os.path.dirname(abspath)
 os.chdir(dname)
 
 # do a pre wipe on folder
-for the_file in os.listdir(jsonFolder):
-    file_path = os.path.join(jsonFolder, the_file)
-    try:
-        if os.path.isfile(file_path):
-            os.unlink(file_path)
-        #elif os.path.isdir(file_path): shutil.rmtree(file_path) # also delete subfolders
-    except Exception as e:
-        print(e)
+if runAxe:
+    for the_file in os.listdir(jsonFolder):
+        file_path = os.path.join(jsonFolder, the_file)
+        try:
+            if os.path.isfile(file_path):
+                os.unlink(file_path)
+            #elif os.path.isdir(file_path): shutil.rmtree(file_path) # also delete subfolders
+        except Exception as e:
+            print(e)
 
 #for each row in csv, run aXe, create json
-with open(csvFilePath, "r") as csvFile:
-    reader = csv.DictReader(csvFile, delimiter=',')
-    print("Running aXe on URL set from csv")
-    for row in reader:
-        noSpaceName = re.sub("[\W_]+", "", row['Name'])
-        thisFilePath = jsonFolder + noSpaceName + ".json"
+if runAxe:
+    with open(csvFilePath, "r") as csvFile:
+        reader = csv.DictReader(csvFile, delimiter=',')
+        print("Running aXe on URL set from csv")
+        for row in reader:
+            noSpaceName = re.sub("[\W_]+", "", row['Name'])
+            thisFilePath = jsonFolder + noSpaceName + ".json"
 
-        # critical part: run aXe. 
-        thisCommand = "axe " + shlex.quote(row["URL"]) + " --load-delay=2000" + " --tags wcag2a" + " --save " + thisFilePath
-        thisSub = subprocess.run(thisCommand, shell=True) 
-        if thisSub.returncode == 0:
-            print("Saved " + noSpaceName)
-        else: 
-            print("File " + noSpaceName + " failed to save")
+            # critical part: run aXe. 
+            thisCommand = "axe " + shlex.quote(row["URL"]) + " --load-delay=2000" + " --tags wcag2a" + " --save " + thisFilePath
+            thisSub = subprocess.run(thisCommand, shell=True) 
+            if thisSub.returncode == 0:
+                print("Saved " + noSpaceName)
+            else: 
+                print("File " + noSpaceName + " failed to save")
 
 # Read in all files currently in jsonFolder to array (rather than relying on them being created)
 filePaths = os.listdir(jsonFolder)
@@ -78,8 +81,11 @@ for index, row in df.iterrows():
     if type(row["Name"]) == str:
         noSpaceName = re.sub("[\W_]+", "", row['Name']) + ".json"
 
+        print ("this noSpaceName: " + noSpaceName)
+
         if noSpaceName in scoreData:
             scoreCol.append(scoreData[noSpaceName])
+            print("this one was ok and we found the column match in scoreData, appending to the col")
         else:
             scoreCol.append(0)
             print(noSpaceName + " not found in scoreData")
@@ -88,8 +94,9 @@ for index, row in df.iterrows():
         print("not a string (empty)")
 
 rightNow = datetime.datetime.now().strftime("%m/%d/%Y %H:%M")
+print("rightNow: " + rightNow)
 df[rightNow] = scoreCol
-df.to_csv(csvFilePath)
+df.to_csv(csvFilePath, mode='w', index=False)
 
 print("Script complete, new data in column in  " + csvFilePath)
 
