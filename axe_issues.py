@@ -9,15 +9,15 @@ print("starting issues script")
 
 jsonFolder = "outputjson/"
 targetNodeTypes = ["all", "any", "none"]
-resultsTotal = dict()
-resultsPerSite = dict()
-resultsThisSite = dict()
+resultsGrand = dict()
+results1PerSite = dict()
 dupIds = ["duplicate-id-active", "aria-valid-attr-value", "duplicate-id-aria"] # ids that give us nonunique messages, and hence duplicates in our results. We'll deal with them below
 
 # Read in all files currently in jsonFolder, for each file, parse the json
 print("Compiling issue data")
 filePaths = os.listdir(jsonFolder)
 for thisFilePath in filePaths:
+    resultsThisSite = dict()
     with open(jsonFolder + thisFilePath, "r", encoding="utf-8") as thisFile:
         data = json.load(thisFile)
         violations = data[0]["violations"]
@@ -44,36 +44,40 @@ for thisFilePath in filePaths:
                             #print(thisFilePath)
                             #print(node[targetNodeType][0]["id"])
 
+                        # add this issue message to our list for this site, and count em up
                         if len(message) > 0:
-                            if message in resultsTotal:
-                                resultsTotal[message] = resultsTotal[message] + 1
+                            if message in resultsThisSite:
+                                resultsThisSite[message] = resultsThisSite[message] + 1
                             else:
-                                resultsTotal[message] = 1
                                 resultsThisSite[message] = 1
 
+    # add the issues for this site to the totals, 1 per site and grand total
     for key, val in resultsThisSite.items():
-        if key in resultsPerSite:
-            resultsPerSite[key] = resultsPerSite[key] + 1
+        if key in results1PerSite:
+            results1PerSite[key] = results1PerSite[key] + 1
         else:
-            resultsPerSite[key] = 1
+            results1PerSite[key] = 1
+        if key in resultsGrand:
+            resultsGrand[key] = resultsGrand[key] + resultsThisSite[key]
+        else:
+            resultsGrand[key] = resultsThisSite[key]
 
 
 
 
 
 
-sortedTotal = sorted(resultsTotal.items(), key=operator.itemgetter(1), reverse=True)
-sortedPer = sorted(resultsPerSite.items(), key=operator.itemgetter(1), reverse=True)
+sortedGrand = sorted(resultsGrand.items(), key=operator.itemgetter(1), reverse=True)
+sortedPer = sorted(results1PerSite.items(), key=operator.itemgetter(1), reverse=True)
 
 print("\n\n\nRESULTS\n\n")
 print("Total across all sites")
-for thing in sortedTotal:
+for thing in sortedGrand:
     print(str(thing[1]) + ": " + str(thing[0]))
 print("\n1 issue from each site")
 for thing in sortedPer:
     print(str(thing[1]) + ": " + str(thing[0]))
 
-print("script complete")
 
 
 
