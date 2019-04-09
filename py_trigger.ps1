@@ -3,8 +3,12 @@
 
 Clear-Host
 
-Start-Transcript -Path "C:\scripts\logs.txt"
+#Start-Transcript -Path "C:\scripts\logs.txt"
 
 # Note: must have python set up in PATH
-python "C:\Users\smm48\Documents\Projects\Axe-Batch\aXe_batch.py"
+#python "C:\Users\smm48\Documents\Projects\Axe-Batch\aXe_batch.py"
+
+
+# testing our issues script
+python "C:\Users\smm48\Documents\Projects\Axe-Batch\axe_issues.py"
 

@@ -85,7 +85,6 @@ for index, row in df.iterrows():
 
         if noSpaceName in scoreData:
             scoreCol.append(scoreData[noSpaceName])
-            print("this one was ok and we found the column match in scoreData, appending to the col")
         else:
             scoreCol.append(0)
             print(noSpaceName + " not found in scoreData")
@@ -94,7 +93,6 @@ for index, row in df.iterrows():
         print("not a string (empty)")
 
 rightNow = datetime.datetime.now().strftime("%m/%d/%Y %H:%M")
-print("rightNow: " + rightNow)
 df[rightNow] = scoreCol
 df.to_csv(csvFilePath, mode='w', index=False)
 
